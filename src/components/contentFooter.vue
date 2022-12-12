@@ -24,8 +24,126 @@ export default {
                     img: "../../public/img/buy-dc-power-visa.svg",
                     text: "DC POWER VISA"
                 },
+            ],
 
-            ]
+            dcComics:
+                [
+                    {
+                        text: "Characters",
+                        url: "#"
+                    },
+                    {
+                        text: "Comics",
+                        url: "#"
+                    },
+                    {
+                        text: "Movies",
+                        url: "#"
+                    },
+                    {
+                        text: "Tv",
+                        url: "#"
+                    },
+                    {
+                        text: "Games",
+                        url: "#"
+                    },
+                    {
+                        text: "Videos",
+                        url: "#"
+                    },
+                    {
+                        text: "news",
+                        url: "#"
+                    },
+
+                ],
+
+            shop: [
+
+                {
+                    text: "Shop DC",
+                    url: "#"
+                },
+                {
+                    text: "Shop DC collection",
+                    url: "#"
+                }
+            ],
+
+            dc:
+                [
+                    {
+                        text: "Term of use",
+                        url: "#"
+                    },
+                    {
+                        text: "Privacy police (new)",
+                        url: "#"
+                    },
+                    {
+                        text: "Ad Choices",
+                        url: "#"
+                    },
+                    {
+                        text: "Advertising",
+                        url: "#"
+                    },
+                    {
+                        text: "Jobs",
+                        url: "#"
+                    },
+                    {
+                        text: "Subscriptions",
+                        url: "#"
+                    },
+                    {
+                        text: "Talent Workshop",
+                        url: "#"
+                    },
+                    {
+                        text: "CPSC Certificates",
+                        url: "#"
+                    },
+                    {
+                        text: "Ratings",
+                        url: "#"
+                    },
+                    {
+                        text: "Shop Help",
+                        url: "#"
+                    },
+                    {
+                        text: "Contact Us",
+                        url: "#"
+                    },
+
+                ],
+
+            sites:
+                [
+                    {
+                        text: "DC",
+                        url: "#"
+                    },
+                    {
+                        text: "MAD Magazine",
+                        url: "#"
+                    },
+                    {
+                        text: "DC Kids",
+                        url: "#"
+                    },
+                    {
+                        text: "DC Universal",
+                        url: "#"
+                    },
+                    {
+                        text: "DC Power Visa",
+                        url: "#"
+                    },
+
+                ],
         }
     }
 }
@@ -46,28 +164,47 @@ export default {
         <!-- sezione navigazione sito completa e logo  -->
         <section id="sfondo">
             <div class="container">
-                <ul>
-                    <li>
 
-                    </li>
-                </ul>
-                <ul>
-                    <li>
+                <div class="container_flex">
+                    <div class="container_ul">
+                        <h2>DC COMICS</h2>
+                        <ul class="pb_2">
+                            <li v-for="(link, index) in dcComics" :key="index">
+                                {{ link.text }}
+                            </li>
+                        </ul>
 
-                    </li>
-                </ul>
-                <ul>
-                    <li>
+                        <h2>SHOP</h2>
+                        <ul>
+                            <li v-for="(link, index) in shop" :key="index">
+                                {{ link.text }}
+                            </li>
+                        </ul>
+                    </div>
 
-                    </li>
-                </ul>
-                <ul>
-                    <li>
+                    <div class="container_ul">
+                        <h2>DC</h2>
+                        <ul>
+                            <li v-for="(link, index) in dc" :key="index">
+                                {{ link.text }}
+                            </li>
+                        </ul>
+                    </div>
 
-                    </li>
-                </ul>
+                    <div class="container_ul">
+                        <h2>SITES</h2>
+                        <ul>
+                            <li v-for="(link, index) in sites" :key="index">
+                                {{ link.text }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                <!-- <img src="../../public/img/dc-logo-bg.png" alt=""> -->
+                <div id="logo_footer">
+
+                </div>
+
             </div>
         </section>
 
@@ -83,7 +220,6 @@ export default {
 <style scoped lang="scss">
 @use "./styles/partials/variables" as *;
 
-footer {}
 
 #container_small {
     width: 65%;
@@ -115,12 +251,46 @@ footer {}
     padding: 20px 0;
     background-image: url("../../public/img/footer-bg.jpg");
     background-size: cover;
-
-    // DEBUG
     height: 400px;
 
-    li {
-        color: white;
+
+    .container_flex {
+        display: flex;
+        justify-content: flex-start;
+
+        .container_ul {
+            margin-right: 70px;
+
+            .pb_2 {
+                padding-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                color: white;
+
+                &:hover {
+                    color: $brandPrimaryColor;
+                    cursor: pointer;
+                }
+
+            }
+
+            li {
+                color: lightgrey;
+                margin: 10px 0;
+                font-size: 12px;
+
+                &:hover {
+                    color: $brandPrimaryColor;
+                    cursor: pointer;
+                }
+            }
+        }
+
     }
+
+
+
 }
 </style>
