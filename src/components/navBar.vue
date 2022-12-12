@@ -81,9 +81,7 @@ export default {
 
 header {
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+
 }
 
 ul {

@@ -22,7 +22,7 @@ export default {
                 },
                 {
                     img: "../../public/img/buy-dc-power-visa.svg",
-                    text: "DC POWER VISA",
+                    text: "DC POWER VISA"
                 },
 
             ]
@@ -33,28 +33,49 @@ export default {
 
 <template>
     <footer>
-
-        <div id="container_small">
-            <!-- sezione info sito -->
-            <section class="container_card">
+        <!-- sezione info sito -->
+        <section id="bg_color_brand">
+            <div id="container_small" class="container_card">
                 <div class="card" v-for="(card, index) in cards" :key="index">
                     <img class="small_img" :src="card.img" alt="">
                     <span class="text">{{ card.text }}</span>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- sezione navigazione sito completa e logo  -->
-            <section>
-                <div class="sfondo">
+        <!-- sezione navigazione sito completa e logo  -->
+        <section id="sfondo">
+            <div class="container">
+                <ul>
+                    <li>
 
-                </div>
-            </section>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
 
-            <!-- sezione sign up -->
-            <section>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
 
-            </section>
-        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+
+                <!-- <img src="../../public/img/dc-logo-bg.png" alt=""> -->
+            </div>
+        </section>
+
+        <!-- sezione sign up -->
+        <section>
+
+        </section>
+
 
     </footer>
 </template>
@@ -62,29 +83,44 @@ export default {
 <style scoped lang="scss">
 @use "./styles/partials/variables" as *;
 
-footer {
-    background-color: $brandPrimaryColor;
-}
+footer {}
 
 #container_small {
     width: 65%;
     margin: 0 auto;
 }
 
-.container_card {
+#bg_color_brand {
+    background-color: $brandPrimaryColor;
+
+    .container_card {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .small_img {
+        max-width: 35px;
+        margin-right: 10px;
+    }
+}
+
+#sfondo {
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-}
+    background-image: url("../../public/img/footer-bg.jpg");
+    background-size: cover;
 
-.card {
-    display: flex;
-    align-items: center;
-    color: white;
-}
+    // DEBUG
+    height: 400px;
 
-.small_img {
-    max-width: 35px;
-    margin-right: 10px;
+    li {
+        color: white;
+    }
 }
 </style>
