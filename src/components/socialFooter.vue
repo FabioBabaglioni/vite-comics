@@ -36,8 +36,6 @@ export default {
 section {
     background-color: #303030;
 
-    // DEBUG
-    height: 200px;
 
     #btn {
         color: white;
@@ -58,6 +56,12 @@ section {
 
         .text_color {
             color: $brandPrimaryColor;
+            font-size: 18px;
+
+            &:hover {
+                color: white;
+                cursor: pointer;
+            }
         }
 
         .pr-15 {
