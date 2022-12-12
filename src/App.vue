@@ -1,11 +1,13 @@
 <script>
 import navBar from './components/navBar.vue'
 import contentMain from './components/contentMain.vue'
+import contentFooter from './components/contentFooter.vue'
+
 
 
 export default {
   components: {
-    navBar, contentMain
+    navBar, contentMain, contentFooter
   }
 }
 </script>
@@ -14,6 +16,8 @@ export default {
 
   <navBar />
   <contentMain />
+  <contentFooter />
+
 
 
 </template>
