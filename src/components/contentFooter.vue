@@ -34,7 +34,7 @@ export default {
 <template>
     <footer>
 
-        <div class="container">
+        <div id="container_small">
             <!-- sezione info sito -->
             <section class="container_card">
                 <div class="card" v-for="(card, index) in cards" :key="index">
@@ -45,7 +45,9 @@ export default {
 
             <!-- sezione navigazione sito completa e logo  -->
             <section>
+                <div class="sfondo">
 
+                </div>
             </section>
 
             <!-- sezione sign up -->
@@ -57,12 +59,14 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "./styles/partials/variables" as *;
+
 footer {
-    background-color: #0282f9;
+    background-color: $brandPrimaryColor;
 }
 
-.container {
+#container_small {
     width: 65%;
     margin: 0 auto;
 }

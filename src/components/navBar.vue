@@ -62,7 +62,7 @@ export default {
 
 <template>
 
-    <header class="">
+    <header class="container">
         <img src="../../public/img/dc-logo.png" alt="">
 
         <ul>
@@ -76,38 +76,37 @@ export default {
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use "./styles/partials/variables" as *;
+
 header {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    padding: 12px 0;
-    width: 70%;
-    margin: 0 auto;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-}
-
-a:hover {
-    color: #0c7cec;
-    padding-bottom: 29px;
-    border-bottom: 5px solid #0c7cec;
-
 }
 
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-li {
-    list-style-type: none;
-    padding: 10px;
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+
+        &:hover {
+            color: $brandPrimaryColor;
+            padding-bottom: 29px;
+            border-bottom: 5px solid $brandPrimaryColor;
+
+        }
+    }
 }
 </style>
