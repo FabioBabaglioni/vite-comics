@@ -95,7 +95,7 @@ a {
 
 a:hover {
     color: #0c7cec;
-    padding-bottom: 36px;
+    padding-bottom: 29px;
     border-bottom: 5px solid #0c7cec;
 
 }
@@ -103,6 +103,7 @@ a:hover {
 ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 li {

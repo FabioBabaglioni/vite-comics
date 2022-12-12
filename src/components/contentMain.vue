@@ -31,5 +31,6 @@ div {
 h1 {
     color: white;
     padding-top: 60px;
+    font-size: 30px;
 }
 </style>
