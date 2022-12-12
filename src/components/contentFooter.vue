@@ -80,7 +80,7 @@ footer {
 }
 
 .small_img {
-    width: 40px;
+    max-width: 35px;
     margin-right: 10px;
 }
 </style>
