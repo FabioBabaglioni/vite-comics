@@ -1,9 +1,11 @@
 <script>
 import navBar from './components/navBar.vue'
+import contentMain from './components/contentMain.vue'
+
 
 export default {
   components: {
-    navBar
+    navBar, contentMain
   }
 }
 </script>
@@ -11,6 +13,8 @@ export default {
 <template>
 
   <navBar />
+  <contentMain />
+
 
 </template>
 

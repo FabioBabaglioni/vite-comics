@@ -80,8 +80,11 @@ export default {
 header {
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    justify-items: center;
     padding: 12px 0;
+    width: 70%;
+    margin: 0 auto;
 }
 
 a {
@@ -92,7 +95,7 @@ a {
 
 a:hover {
     color: #0c7cec;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
     border-bottom: 5px solid #0c7cec;
 
 }
