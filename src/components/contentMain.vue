@@ -1,6 +1,10 @@
 <script>
+import jumbotron from './jumbotron.vue'
 
 export default {
+    components: {
+        jumbotron
+    },
     props: {
         card: Array
     }
@@ -8,6 +12,7 @@ export default {
 </script>
 
 <template>
+    <jumbotron />
     <main>
         <section class="container">
             <div class="container_flex">
