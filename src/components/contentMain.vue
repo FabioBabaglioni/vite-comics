@@ -15,7 +15,7 @@ export default {
     <jumbotron />
     <main>
         <section class="container">
-            <div class="container_flex">
+            <div class="container_flex container">
                 <div class="card" v-for="(cards, index) in card" :key="index">
                     <div class="box_img">
                         <img class="img_small" :src="cards.thumb" alt="">
@@ -44,7 +44,6 @@ main {
 
         .card {
             width: calc((100% / 6) - 10px);
-            height: auto;
             padding: 20px 5px;
         }
 
@@ -62,7 +61,7 @@ main {
     }
 
     .btn {
-        margin: 0px 0px 40px 0;
+        margin-bottom: 40px;
         padding: 5px 20px;
         background-color: $brandPrimaryColor;
         border: solid 3px $brandPrimaryColor;
