@@ -67,7 +67,7 @@ export default {
     .card {
         display: flex;
         align-items: center;
-        color: white;
+        color: $brandSecondaryColor;
     }
 
     .small_img {

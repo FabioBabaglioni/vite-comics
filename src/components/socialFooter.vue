@@ -38,12 +38,12 @@ section {
 
 
     #btn {
-        color: white;
+        color: $brandSecondaryColor;
         border: 2px solid $brandPrimaryColor;
         padding: 10px;
 
         &:hover {
-            border: 2px solid white;
+            border: 2px solid $brandSecondaryColor;
             color: $brandPrimaryColor;
             cursor: pointer;
         }
@@ -59,7 +59,7 @@ section {
             font-size: 18px;
 
             &:hover {
-                color: white;
+                color: $brandSecondaryColor;
                 cursor: pointer;
             }
         }

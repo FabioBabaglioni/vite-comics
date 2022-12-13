@@ -201,7 +201,7 @@ export default {
 
             h2 {
                 font-size: 20px;
-                color: white;
+                color: $brandSecondaryColor;
 
                 &:hover {
                     color: $brandPrimaryColor;

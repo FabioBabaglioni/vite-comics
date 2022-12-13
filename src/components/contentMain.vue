@@ -17,7 +17,7 @@ export default {
         <section class="container">
             <div class="container_flex">
                 <div class="card" v-for="(cards, index) in card" :key="index">
-                    <div class="box">
+                    <div class="box_img">
                         <img class="img_small" :src="cards.thumb" alt="">
                     </div>
                     <div class="text_series">{{ cards.series }}</div>
@@ -48,7 +48,7 @@ main {
             padding: 20px 5px;
         }
 
-        .box {
+        .box_img {
             width: 140px;
             height: 140px;
             overflow: hidden;
