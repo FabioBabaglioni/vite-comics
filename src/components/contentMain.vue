@@ -23,7 +23,9 @@ export default {
                     <div class="text_series">{{ cards.series }}</div>
                 </div>
             </div>
-
+        </section>
+        <section class="container_center">
+            <button class="btn">LOAD MORE</button>
         </section>
     </main>
 </template>
@@ -57,6 +59,25 @@ main {
             font-size: 15px;
             padding-top: 20px;
         }
+    }
+
+    .btn {
+        margin: 0px 0px 40px 0;
+        padding: 5px 20px;
+        background-color: $brandPrimaryColor;
+        border: solid 3px $brandPrimaryColor;
+        color: $brandSecondaryColor;
+
+        &:hover {
+            background-color: white;
+            color: $brandPrimaryColor;
+            border: solid 3px $brandPrimaryColor;
+        }
+    }
+
+    .container_center {
+        display: flex;
+        justify-content: center;
     }
 
 
