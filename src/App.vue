@@ -17,6 +17,7 @@ export default {
   <navBar />
   <contentMain />
   <contentFooter />
+
 </template>
 
 <style lang="scss">

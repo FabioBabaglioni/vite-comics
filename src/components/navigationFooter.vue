@@ -168,11 +168,9 @@ export default {
                 </div>
             </div>
 
-            <div id="logo">
+            <img id="logo" src="../../public/img/dc-logo-bg.png" alt="">
 
-                <!-- <img src="../../public/img/dc-logo-bg.png" alt=""> -->
 
-            </div>
 
 
         </div>
@@ -187,6 +185,7 @@ export default {
     background-image: url("../../public/img/footer-bg.jpg");
     background-size: cover;
     height: 400px;
+    overflow: hidden;
 
 
     .container_flex {
@@ -194,7 +193,7 @@ export default {
         justify-content: flex-start;
 
         .container_ul {
-            margin-right: 70px;
+            margin-right: 50px;
 
             .pb_2 {
                 padding-bottom: 20px;
@@ -223,7 +222,9 @@ export default {
             }
         }
 
-        #logo {}
+        #logo {
+            margin-top: -20px;
+        }
     }
 
 
